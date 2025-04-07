@@ -3,11 +3,33 @@ import { Celebrity } from "../types";
 
 // Celebrity data for One Love INDIA application
 export const celebrities: Celebrity[] = [
-  // Film Industry
+  // Maharashtra
   {
     id: 1,
+    name: "Amitabh Bachchan",
+    category: "Film",
+    state: "Maharashtra",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "One of India's most influential actors with a career spanning over five decades in Hindi cinema.",
+    achievements: [
+      "Padma Vibhushan (2015)",
+      "4 National Film Awards",
+      "Dadasaheb Phalke Award (2019)",
+      "Legion of Honour (2007)"
+    ],
+    votes: 9078,
+    socialMedia: {
+      twitter: "SrBachchan",
+      instagram: "amitabhbachchan"
+    }
+  },
+  
+  // Delhi
+  {
+    id: 2,
     name: "Shah Rukh Khan",
     category: "Film",
+    state: "Delhi",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Known as the 'King of Bollywood', Shah Rukh Khan has appeared in more than 80 Hindi films and earned numerous accolades.",
     achievements: [
@@ -22,167 +44,13 @@ export const celebrities: Celebrity[] = [
       instagram: "iamsrk"
     }
   },
-  {
-    id: 2,
-    name: "Deepika Padukone",
-    category: "Film",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "One of the highest-paid actresses in India, Deepika is known for her versatile roles in films like Padmaavat and Piku.",
-    achievements: [
-      "3 Filmfare Awards",
-      "TIME 100 Most Influential People (2018)",
-      "Crystal Award at Davos (2020)",
-      "Chairperson of Mumbai Academy of Moving Images"
-    ],
-    votes: 6589,
-    socialMedia: {
-      instagram: "deepikapadukone"
-    }
-  },
+  
+  // Karnataka
   {
     id: 3,
-    name: "Amitabh Bachchan",
-    category: "Film",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "One of India's most influential actors with a career spanning over five decades in Hindi cinema.",
-    achievements: [
-      "Padma Vibhushan (2015)",
-      "4 National Film Awards",
-      "Dadasaheb Phalke Award (2019)",
-      "Legion of Honour (2007)"
-    ],
-    votes: 9078,
-    socialMedia: {
-      twitter: "SrBachchan",
-      instagram: "amitabhbachchan"
-    }
-  },
-  {
-    id: 4,
-    name: "Aamir Khan",
-    category: "Film",
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Known as 'Mr. Perfectionist' for his detailed approach to filmmaking and acting. He has transformed Indian cinema with his innovative storytelling.",
-    achievements: [
-      "Multiple National Film Awards",
-      "Padma Bhushan (2010)",
-      "Global success with 'Dangal' and '3 Idiots'",
-      "UNICEF National Ambassador"
-    ],
-    votes: 8456,
-    socialMedia: {
-      twitter: "aamir_khan"
-    }
-  },
-  {
-    id: 5,
-    name: "Priyanka Chopra Jonas",
-    category: "Film",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Global star who transitioned from Miss World to Bollywood to Hollywood, breaking barriers for Indian actors internationally.",
-    achievements: [
-      "National Film Award",
-      "Padma Shri (2016)",
-      "First South Asian to lead an American network series",
-      "UNICEF Goodwill Ambassador"
-    ],
-    votes: 7823,
-    socialMedia: {
-      twitter: "priyankachopra",
-      instagram: "priyankachopra"
-    }
-  },
-  {
-    id: 6,
-    name: "Ranveer Singh",
-    category: "Film",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Energetic actor known for his versatility, flamboyant style and powerful performances in diverse roles.",
-    achievements: [
-      "Multiple Filmfare Awards",
-      "GQ Most Influential Young Indian",
-      "Acclaimed performances in 'Padmaavat', 'Gully Boy'",
-      "Brand ambassador for multiple global brands"
-    ],
-    votes: 6734,
-    socialMedia: {
-      instagram: "ranveersingh"
-    }
-  },
-  {
-    id: 7,
-    name: "Alia Bhatt",
-    category: "Film",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Versatile actress who has quickly risen to become one of Bollywood's top performers with critically acclaimed roles.",
-    achievements: [
-      "Multiple Filmfare Awards",
-      "Forbes 30 Under 30 Asia list",
-      "National Film Award",
-      "Environmental activism through Coexist initiative"
-    ],
-    votes: 7125,
-    socialMedia: {
-      instagram: "aliaabhatt"
-    }
-  },
-  
-  // Business Leaders
-  {
-    id: 8,
-    name: "Mukesh Ambani",
-    category: "Business",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Chairman and Managing Director of Reliance Industries Limited, one of India's most valuable companies.",
-    achievements: [
-      "Built Reliance Jio, transforming India's telecom sector",
-      "Foreign member of the US National Academy of Engineering",
-      "Among TIME's 100 most influential people",
-      "Built Antilia, one of the world's most expensive homes"
-    ],
-    votes: 5632,
-    socialMedia: {
-      linkedin: "mukesh-ambani"
-    }
-  },
-  {
-    id: 9,
-    name: "Ratan Tata",
-    category: "Business",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Former Chairman of Tata Sons and a noted philanthropist who transformed the Tata Group into a global enterprise.",
-    achievements: [
-      "Padma Vibhushan (2008)",
-      "Commander of the Legion of Honour (2016)",
-      "Honorary Knight Grand Cross of the Order of the British Empire",
-      "Lifetime Achievement Award by Rockefeller Foundation"
-    ],
-    votes: 8746,
-    socialMedia: {
-      twitter: "RNTata2000"
-    }
-  },
-  {
-    id: 10,
-    name: "Nandan Nilekani",
-    category: "Business",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Co-founder of Infosys and Founding Chairman of UIDAI (Aadhaar), revolutionizing India's tech landscape and digital identity system.",
-    achievements: [
-      "Padma Bhushan",
-      "Forbes' 'Asia's Businessmen of the Year'",
-      "Architect of Aadhaar, world's largest biometric ID system",
-      "Author of 'Imagining India' and 'Rebooting India'"
-    ],
-    votes: 6245,
-    socialMedia: {
-      twitter: "NandanNilekani"
-    }
-  },
-  {
-    id: 11,
     name: "Kiran Mazumdar-Shaw",
     category: "Business",
+    state: "Karnataka",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Founder and Executive Chairperson of Biocon Limited, pioneering biotechnology innovation in India.",
     achievements: [
@@ -196,220 +64,13 @@ export const celebrities: Celebrity[] = [
       twitter: "kiranshaw"
     }
   },
-  {
-    id: 12,
-    name: "Anand Mahindra",
-    category: "Business",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Chairman of Mahindra Group who transformed a steel trading company into a global conglomerate spanning 22 industries.",
-    achievements: [
-      "Padma Bhushan recipient",
-      "Harvard Business School Alumni Achievement Award",
-      "Leadership in electric mobility innovation",
-      "Philanthropy through Nanhi Kali initiative"
-    ],
-    votes: 6123,
-    socialMedia: {
-      twitter: "anandmahindra"
-    }
-  },
   
-  // Politics
+  // Tamil Nadu
   {
-    id: 13,
-    name: "Narendra Modi",
-    category: "Politics",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "14th and current Prime Minister of India, known for his economic reforms and foreign policy initiatives.",
-    achievements: [
-      "Longest-serving Non-Congress Prime Minister",
-      "Order of Abdulaziz Al Saud (Saudi Arabia)",
-      "Order of Zayed (UAE)",
-      "Grand Collar of the State of Palestine"
-    ],
-    votes: 7523,
-    socialMedia: {
-      twitter: "narendramodi",
-      instagram: "narendramodi"
-    }
-  },
-  {
-    id: 14,
-    name: "Sonia Gandhi",
-    category: "Politics",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Former President of the Indian National Congress party and longest-serving president of the party.",
-    achievements: [
-      "Led Congress party for over 19 years",
-      "Forbes' list of most powerful women",
-      "Architect of social welfare programs",
-      "Key role in forming coalition governments"
-    ],
-    votes: 5234,
-    socialMedia: {}
-  },
-  {
-    id: 15,
-    name: "A. P. J. Abdul Kalam",
-    category: "Politics",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "11th President of India and renowned scientist who played a pivotal role in India's civilian space program and military missile development.",
-    achievements: [
-      "Bharat Ratna (1997)",
-      "Development of India's first satellite launch vehicle",
-      "Key contributor to nuclear tests at Pokhran",
-      "Author of 'Wings of Fire' and 'Ignited Minds'"
-    ],
-    votes: 8975,
-    socialMedia: {}
-  },
-  {
-    id: 16,
-    name: "Amit Shah",
-    category: "Politics",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Union Home Minister of India and former President of the Bharatiya Janata Party (BJP), known as a strategic political organizer.",
-    achievements: [
-      "Key architect of BJP's national expansion",
-      "Implementation of major policy reforms",
-      "Revocation of Article 370 in Jammu and Kashmir",
-      "One of India's most influential political strategists"
-    ],
-    votes: 6432,
-    socialMedia: {
-      twitter: "AmitShah"
-    }
-  },
-  {
-    id: 17,
-    name: "Mamata Banerjee",
-    category: "Politics",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "First woman Chief Minister of West Bengal and founder of the All India Trinamool Congress.",
-    achievements: [
-      "Multiple terms as Chief Minister",
-      "Seven terms as Member of Parliament",
-      "Author of several books",
-      "Listed among 100 most influential people by TIME"
-    ],
-    votes: 5876,
-    socialMedia: {
-      twitter: "MamataOfficial"
-    }
-  },
-  
-  // Sports
-  {
-    id: 18,
-    name: "Virat Kohli",
-    category: "Sports",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Former captain of the Indian cricket team and one of the greatest batsmen in the world.",
-    achievements: [
-      "ICC Cricketer of the Year (2017, 2018)",
-      "Rajiv Gandhi Khel Ratna Award (2018)",
-      "Padma Shri (2017)",
-      "Most centuries in ODI cricket chases"
-    ],
-    votes: 9453,
-    socialMedia: {
-      twitter: "imVkohli",
-      instagram: "virat.kohli"
-    }
-  },
-  {
-    id: 19,
-    name: "P.V. Sindhu",
-    category: "Sports",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "First Indian to become Badminton World Champion and only Indian woman to win two Olympic medals.",
-    achievements: [
-      "Olympic Silver Medalist (2016)",
-      "Olympic Bronze Medalist (2020)",
-      "Padma Bhushan (2020)",
-      "BWF World Championships Gold (2019)"
-    ],
-    votes: 6754,
-    socialMedia: {
-      twitter: "Pvsindhu1",
-      instagram: "pvsindhu1"
-    }
-  },
-  {
-    id: 20,
-    name: "Sachin Tendulkar",
-    category: "Sports",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Legendary cricketer known as the 'God of Cricket' and the highest run-scorer in international cricket history.",
-    achievements: [
-      "First player to score 100 international centuries",
-      "Bharat Ratna (2014)",
-      "Rajiv Gandhi Khel Ratna Award",
-      "First sportsperson to receive Bharat Ratna"
-    ],
-    votes: 9875,
-    socialMedia: {
-      twitter: "sachin_rt"
-    }
-  },
-  {
-    id: 21,
-    name: "Mary Kom",
-    category: "Sports",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Six-time World Amateur Boxing champion and the only woman boxer to win medals in seven world championships.",
-    achievements: [
-      "Olympic Bronze Medalist (2012)",
-      "Padma Vibhushan",
-      "Rajiv Gandhi Khel Ratna Award",
-      "Member of Parliament, Rajya Sabha"
-    ],
-    votes: 7234,
-    socialMedia: {
-      twitter: "MangteC"
-    }
-  },
-  {
-    id: 22,
-    name: "Neeraj Chopra",
-    category: "Sports",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Javelin thrower who won India's first Olympic gold medal in athletics, ending a 100-year wait for a track and field medal.",
-    achievements: [
-      "Olympic Gold Medalist (2020 Tokyo)",
-      "Asian Games Gold Medalist",
-      "Commonwealth Games Gold Medalist",
-      "Major Dhyan Chand Khel Ratna Award"
-    ],
-    votes: 8567,
-    socialMedia: {
-      twitter: "Neeraj_chopra1",
-      instagram: "neeraj____chopra"
-    }
-  },
-  {
-    id: 23,
-    name: "Saina Nehwal",
-    category: "Sports",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Former world no. 1 badminton player who brought badminton to prominence in India with her Olympic bronze medal.",
-    achievements: [
-      "Olympic Bronze Medalist (2012)",
-      "Padma Bhushan",
-      "Rajiv Gandhi Khel Ratna Award",
-      "Commonwealth Games Gold Medalist"
-    ],
-    votes: 6543,
-    socialMedia: {
-      twitter: "NSaina"
-    }
-  },
-  
-  // Music
-  {
-    id: 24,
+    id: 4,
     name: "A.R. Rahman",
     category: "Music",
+    state: "Tamil Nadu",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Renowned composer, singer and music producer known as the 'Mozart of Madras'.",
     achievements: [
@@ -424,141 +85,293 @@ export const celebrities: Celebrity[] = [
       instagram: "arrahman"
     }
   },
+  
+  // Gujarat
   {
-    id: 25,
-    name: "Lata Mangeshkar",
-    category: "Music",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Legendary playback singer known as the 'Nightingale of India' with a career spanning over seven decades.",
+    id: 5,
+    name: "Narendra Modi",
+    category: "Politics",
+    state: "Gujarat",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "14th and current Prime Minister of India, known for his economic reforms and foreign policy initiatives.",
     achievements: [
-      "Bharat Ratna (2001)",
-      "Dadasaheb Phalke Award",
-      "France's Legion of Honour",
-      "Over 25,000 songs recorded"
+      "Longest-serving Non-Congress Prime Minister",
+      "Order of Abdulaziz Al Saud (Saudi Arabia)",
+      "Order of Zayed (UAE)",
+      "Grand Collar of the State of Palestine"
     ],
-    votes: 8976,
+    votes: 7523,
     socialMedia: {
-      twitter: "mangeshkarlata"
+      twitter: "narendramodi",
+      instagram: "narendramodi"
     }
   },
+  
+  // Haryana
   {
-    id: 26,
-    name: "Shreya Ghoshal",
-    category: "Music",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Leading playback singer who has recorded songs in over 20 Indian languages and multiple international languages.",
-    achievements: [
-      "4 National Film Awards",
-      "7 Filmfare Awards",
-      "London's Madame Tussauds wax statue",
-      "One of the highest-paid singers in India"
-    ],
-    votes: 7654,
-    socialMedia: {
-      twitter: "shreyaghoshal",
-      instagram: "shreyaghoshal"
-    }
-  },
-  {
-    id: 27,
-    name: "Arijit Singh",
-    category: "Music",
+    id: 6,
+    name: "Neeraj Chopra",
+    category: "Sports",
+    state: "Haryana",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Most popular contemporary playback singer in Bollywood known for his soulful voice.",
+    description: "Javelin thrower who won India's first Olympic gold medal in athletics, ending a 100-year wait for a track and field medal.",
     achievements: [
-      "Multiple Filmfare Awards",
-      "GiMA Awards",
-      "IIFA Awards",
-      "Record-breaking streak of hit songs"
+      "Olympic Gold Medalist (2020 Tokyo)",
+      "Asian Games Gold Medalist",
+      "Commonwealth Games Gold Medalist",
+      "Major Dhyan Chand Khel Ratna Award"
     ],
-    votes: 8432,
+    votes: 8567,
     socialMedia: {
-      instagram: "arijitsingh"
+      twitter: "Neeraj_chopra1",
+      instagram: "neeraj____chopra"
     }
   },
   
-  // Science
+  // West Bengal
   {
-    id: 28,
-    name: "Kalpana Chawla",
-    category: "Science",
+    id: 7,
+    name: "Mamata Banerjee",
+    category: "Politics",
+    state: "West Bengal",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "The first woman of Indian origin to go to space, remembered for her contributions to space exploration.",
+    description: "First woman Chief Minister of West Bengal and founder of the All India Trinamool Congress.",
     achievements: [
-      "NASA Distinguished Service Medal",
-      "Congressional Space Medal of Honor",
-      "NASA Space Flight Medal",
-      "Multiple asteroids and satellites named after her"
+      "Multiple terms as Chief Minister",
+      "Seven terms as Member of Parliament",
+      "Author of several books",
+      "Listed among 100 most influential people by TIME"
     ],
-    votes: 5839,
-    socialMedia: {}
-  },
-  {
-    id: 29,
-    name: "Dr. C.V. Raman",
-    category: "Science",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Physicist who discovered the 'Raman Effect', revolutionizing the understanding of light scattering.",
-    achievements: [
-      "Nobel Prize in Physics (1930)",
-      "Bharat Ratna (1954)",
-      "Lenin Peace Prize",
-      "First Asian to win Nobel Prize in Sciences"
-    ],
-    votes: 5432,
-    socialMedia: {}
-  },
-  {
-    id: 30,
-    name: "Vikram Sarabhai",
-    category: "Science",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Father of India's space program who established the Indian Space Research Organisation (ISRO).",
-    achievements: [
-      "Padma Bhushan (1966)",
-      "Padma Vibhushan (posthumous)",
-      "Founder of Physical Research Laboratory",
-      "Established Indian Institute of Management Ahmedabad"
-    ],
-    votes: 5678,
-    socialMedia: {}
-  },
-  {
-    id: 31,
-    name: "Dr. Tessy Thomas",
-    category: "Science",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Known as the 'Missile Woman of India', she is the first woman scientist to head a missile project in India.",
-    achievements: [
-      "Project Director for Agni-IV and Agni-V missiles",
-      "Outstanding Scientist award by DRDO",
-      "DRDO Scientist of the Year Award",
-      "Y. Nayudamma Memorial Award"
-    ],
-    votes: 5123,
-    socialMedia: {}
+    votes: 5876,
+    socialMedia: {
+      twitter: "MamataOfficial"
+    }
   },
   
-  // Literature
+  // Punjab
   {
-    id: 32,
-    name: "Rabindranath Tagore",
-    category: "Literature",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Poet, writer, composer, philosopher and painter who reshaped Bengali literature and music in the late 19th and early 20th centuries.",
+    id: 8,
+    name: "Milkha Singh",
+    category: "Sports",
+    state: "Punjab",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "The 'Flying Sikh', who was the first Indian male athlete to reach an Olympic final.",
     achievements: [
-      "Nobel Prize in Literature (1913)",
-      "Composed national anthems of India and Bangladesh",
-      "Established Visva-Bharati University",
-      "Over 2,000 songs and 50 volumes of poetry"
+      "Gold medals at Commonwealth Games",
+      "Gold medals at Asian Games",
+      "Padma Shri recipient",
+      "Represented India in three Olympic Games"
     ],
     votes: 6789,
     socialMedia: {}
   },
+  
+  // Uttar Pradesh
   {
-    id: 33,
+    id: 9,
+    name: "Akhilesh Yadav",
+    category: "Politics",
+    state: "Uttar Pradesh",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Former Chief Minister of Uttar Pradesh and President of the Samajwadi Party.",
+    achievements: [
+      "Youngest Chief Minister of UP",
+      "Implemented numerous infrastructure projects",
+      "M.C.E. degree from University of Sydney",
+      "Member of Parliament multiple times"
+    ],
+    votes: 5432,
+    socialMedia: {
+      twitter: "yadavakhilesh"
+    }
+  },
+  
+  // Andhra Pradesh
+  {
+    id: 10,
+    name: "P.V. Sindhu",
+    category: "Sports",
+    state: "Andhra Pradesh",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "First Indian to become Badminton World Champion and only Indian woman to win two Olympic medals.",
+    achievements: [
+      "Olympic Silver Medalist (2016)",
+      "Olympic Bronze Medalist (2020)",
+      "Padma Bhushan (2020)",
+      "BWF World Championships Gold (2019)"
+    ],
+    votes: 6754,
+    socialMedia: {
+      twitter: "Pvsindhu1",
+      instagram: "pvsindhu1"
+    }
+  },
+  
+  // Kerala
+  {
+    id: 11,
+    name: "Mohanlal",
+    category: "Film",
+    state: "Kerala",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "One of the most celebrated actors in Malayalam cinema with a career spanning over four decades.",
+    achievements: [
+      "5 National Film Awards",
+      "Padma Shri and Padma Bhushan recipient",
+      "Lieutenant Colonel in Territorial Army",
+      "Over 340 films in multiple languages"
+    ],
+    votes: 7123,
+    socialMedia: {
+      twitter: "Mohanlal",
+      instagram: "mohanlal"
+    }
+  },
+  
+  // Rajasthan
+  {
+    id: 12,
+    name: "Diya Kumari",
+    category: "Politics",
+    state: "Rajasthan",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Member of the royal family of Jaipur and a prominent politician serving as Member of Parliament.",
+    achievements: [
+      "Member of Parliament from Rajsamand",
+      "Former MLA from Sawai Madhopur",
+      "Prominent advocate for women's rights",
+      "Established Princess Diya Kumari Foundation"
+    ],
+    votes: 5123,
+    socialMedia: {
+      twitter: "KumariDiya"
+    }
+  },
+  
+  // Odisha
+  {
+    id: 13,
+    name: "Dutee Chand",
+    category: "Sports",
+    state: "Odisha",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "India's first openly gay athlete and national record holder in women's 100m sprint.",
+    achievements: [
+      "Two silver medals at Asian Games",
+      "First Indian to win a gold medal at World University Games",
+      "National record holder in 100m sprint",
+      "Arjuna Award recipient"
+    ],
+    votes: 5678,
+    socialMedia: {
+      twitter: "DuteeChand",
+      instagram: "duteechand"
+    }
+  },
+  
+  // Bihar
+  {
+    id: 14,
+    name: "Sushil Kumar Modi",
+    category: "Politics",
+    state: "Bihar",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Former Deputy Chief Minister of Bihar and a senior BJP leader.",
+    achievements: [
+      "Member of Rajya Sabha",
+      "Former Deputy Chief Minister of Bihar",
+      "Chairman of Empowered Committee of State Finance Ministers",
+      "Key architect of GST implementation"
+    ],
+    votes: 4987,
+    socialMedia: {
+      twitter: "SushilModi"
+    }
+  },
+  
+  // Jharkhand
+  {
+    id: 15,
+    name: "MS Dhoni",
+    category: "Sports",
+    state: "Jharkhand",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Former captain of the Indian cricket team who led India to win the ICC World Cup, ICC Champions Trophy, and ICC World Twenty20.",
+    achievements: [
+      "Captain of ICC World Cup winning team (2011)",
+      "Padma Bhushan recipient",
+      "Honorary Lieutenant Colonel in the Territorial Army",
+      "First captain to win all ICC trophies"
+    ],
+    votes: 9876,
+    socialMedia: {
+      instagram: "mahi7781"
+    }
+  },
+  
+  // Assam
+  {
+    id: 16,
+    name: "Bhupen Hazarika",
+    category: "Music",
+    state: "Assam",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Legendary singer, musician, and filmmaker known as the 'Bard of the Brahmaputra'.",
+    achievements: [
+      "Bharat Ratna (posthumous)",
+      "Dadasaheb Phalke Award",
+      "Padma Vibhushan",
+      "National Film Award for Best Music Direction"
+    ],
+    votes: 6543,
+    socialMedia: {}
+  },
+  
+  // Madhya Pradesh
+  {
+    id: 17,
+    name: "Shankar Mahadevan",
+    category: "Music",
+    state: "Madhya Pradesh",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Award-winning composer and playback singer who is part of the Shankar–Ehsaan–Loy composing trio.",
+    achievements: [
+      "National Film Award for Best Male Playback Singer",
+      "Padma Shri recipient",
+      "Multiple Filmfare Awards",
+      "Global Indian Music Academy Awards"
+    ],
+    votes: 6234,
+    socialMedia: {
+      twitter: "Shankar_Live",
+      instagram: "shankar.mahadevan"
+    }
+  },
+  
+  // Chhattisgarh
+  {
+    id: 18,
+    name: "Anuj Sharma",
+    category: "Film",
+    state: "Chhattisgarh",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Prominent actor and politician from Chhattisgarh who has contributed significantly to regional cinema.",
+    achievements: [
+      "Several hit films in Chhattisgarhi cinema",
+      "Promoted regional language and culture",
+      "Active in social welfare activities",
+      "Political leadership in the state"
+    ],
+    votes: 4567,
+    socialMedia: {}
+  },
+  
+  // Uttarakhand
+  {
+    id: 19,
     name: "Ruskin Bond",
     category: "Literature",
+    state: "Uttarakhand",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Beloved author of British descent who writes about life in the Himalayan foothills and has enchanted generations of readers.",
     achievements: [
@@ -570,190 +383,360 @@ export const celebrities: Celebrity[] = [
     votes: 6543,
     socialMedia: {}
   },
+  
+  // Telangana
   {
-    id: 34,
-    name: "Amish Tripathi",
-    category: "Literature",
+    id: 20,
+    name: "P.V. Narasimha Rao",
+    category: "Politics",
+    state: "Telangana",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Author who revolutionized Indian mythology by retelling ancient stories in a contemporary context with his Shiva Trilogy.",
+    description: "Former Prime Minister of India who implemented significant economic reforms that liberalized the Indian economy.",
     achievements: [
-      "Over 5 million copies sold",
-      "Fastest selling book series in Indian publishing history",
-      "Director of Nehru Centre in London",
-      "Listed among top 100 celebrities by Forbes India"
+      "9th Prime Minister of India",
+      "Economic liberalization policies",
+      "Scholar who knew 17 languages",
+      "Author of 'The Insider' and other books"
     ],
-    votes: 6123,
-    socialMedia: {
-      twitter: "authoramish"
-    }
-  },
-  {
-    id: 35,
-    name: "Arundhati Roy",
-    category: "Literature",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Novelist, activist and political commentator known for her novel 'The God of Small Things'.",
-    achievements: [
-      "Man Booker Prize (1997)",
-      "Sydney Peace Prize",
-      "Norman Mailer Prize",
-      "National Book Critics Circle Award finalist"
-    ],
-    votes: 5876,
+    votes: 5789,
     socialMedia: {}
   },
   
-  // Social
+  // Himachal Pradesh
   {
-    id: 36,
-    name: "Mother Teresa",
-    category: "Social",
+    id: 21,
+    name: "Preity Zinta",
+    category: "Film",
+    state: "Himachal Pradesh",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Roman Catholic nun who founded the Missionaries of Charity and devoted her life to serving the poorest of the poor.",
+    description: "Actress and entrepreneur known for her roles in Hindi films and as co-owner of Punjab Kings IPL team.",
     achievements: [
-      "Nobel Peace Prize (1979)",
-      "Canonized as Saint Teresa of Calcutta",
-      "Bharat Ratna (1980)",
-      "Ramon Magsaysay Award"
+      "Filmfare Award for Best Female Debut",
+      "Silver Hugo Award for Best Actress",
+      "Godfrey's Mind of Steel Award for bravery",
+      "Successful entrepreneur and sports team owner"
     ],
-    votes: 7654,
-    socialMedia: {}
-  },
-  {
-    id: 37,
-    name: "Kailash Satyarthi",
-    category: "Social",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Children's rights activist who has worked against child labor and for the right to education for all children.",
-    achievements: [
-      "Nobel Peace Prize (2014)",
-      "Rescued over 90,000 children from slavery",
-      "Founded Bachpan Bachao Andolan",
-      "Congressional briefing in the United States"
-    ],
-    votes: 5678,
+    votes: 6789,
     socialMedia: {
-      twitter: "k_satyarthi"
+      twitter: "realpreityzinta",
+      instagram: "realpz"
     }
   },
+  
+  // Goa
   {
-    id: 38,
-    name: "Medha Patkar",
-    category: "Social",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Social activist and founder of Narmada Bachao Andolan, fighting for the rights of people displaced by the Sardar Sarovar Dam.",
+    id: 22,
+    name: "Manohar Parrikar",
+    category: "Politics",
+    state: "Goa",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Former Chief Minister of Goa and Defence Minister of India known for his simple lifestyle and administrative skills.",
     achievements: [
-      "Right Livelihood Award",
-      "Goldman Environmental Prize",
-      "Led one of the most powerful social movements in India",
-      "Advocated for sustainable development policies"
+      "IIT Mumbai graduate in metallurgical engineering",
+      "Four-time Chief Minister of Goa",
+      "Former Defence Minister of India",
+      "Known for his integrity and simplicity"
+    ],
+    votes: 5432,
+    socialMedia: {}
+  },
+  
+  // Manipur
+  {
+    id: 23,
+    name: "Mary Kom",
+    category: "Sports",
+    state: "Manipur",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Six-time World Amateur Boxing champion and the only woman boxer to win medals in seven world championships.",
+    achievements: [
+      "Olympic Bronze Medalist (2012)",
+      "Padma Vibhushan",
+      "Rajiv Gandhi Khel Ratna Award",
+      "Member of Parliament, Rajya Sabha"
+    ],
+    votes: 7234,
+    socialMedia: {
+      twitter: "MangteC"
+    }
+  },
+  
+  // Tripura
+  {
+    id: 24,
+    name: "Sourabhee Debbarma",
+    category: "Music",
+    state: "Tripura",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "First female winner of Indian Idol and one of the most prominent musicians from Northeast India.",
+    achievements: [
+      "Winner of Indian Idol 4",
+      "First female winner in the show's history",
+      "Successful career in playback singing",
+      "Ambassador for Northeast Indian music"
+    ],
+    votes: 5123,
+    socialMedia: {
+      instagram: "sourabheedebbarma"
+    }
+  },
+  
+  // Arunachal Pradesh
+  {
+    id: 25,
+    name: "Talom Rukbo",
+    category: "Social",
+    state: "Arunachal Pradesh",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Father of the Donyi-Polo movement who worked for the preservation of indigenous cultural identity in Arunachal Pradesh.",
+    achievements: [
+      "Founded the Donyi-Polo cultural movement",
+      "Preserved indigenous tribal heritage",
+      "Advocated for cultural autonomy",
+      "Revived traditional practices and values"
+    ],
+    votes: 4765,
+    socialMedia: {}
+  },
+  
+  // Meghalaya
+  {
+    id: 26,
+    name: "PA Sangma",
+    category: "Politics",
+    state: "Meghalaya",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Former Speaker of the Lok Sabha and Chief Minister of Meghalaya who was a prominent leader from Northeast India.",
+    achievements: [
+      "Speaker of the Lok Sabha (1996-1998)",
+      "Chief Minister of Meghalaya",
+      "Co-founder of Nationalist Congress Party",
+      "Nine-time Member of Parliament"
     ],
     votes: 5234,
     socialMedia: {}
   },
+  
+  // Nagaland
   {
-    id: 39,
-    name: "Afroz Shah",
-    category: "Social",
+    id: 27,
+    name: "Neiphiu Rio",
+    category: "Politics",
+    state: "Nagaland",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Environmental activist who led the world's largest beach clean-up project at Versova Beach in Mumbai.",
+    description: "Chief Minister of Nagaland who has played a significant role in the state's development.",
     achievements: [
-      "UN's Top Environmental Accolade - Champions of the Earth",
-      "Removed over 5,000 tonnes of plastic from Versova Beach",
-      "Inspired global beach clean-up movements",
-      "Featured in TIME magazine's list of heroes"
-    ],
-    votes: 5123,
-    socialMedia: {
-      twitter: "AfrozShah1"
-    }
-  },
-  {
-    id: 40,
-    name: "Dr. Bindeshwar Pathak",
-    category: "Social",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Founder of Sulabh International, revolutionizing sanitation practices and working to abolish manual scavenging in India.",
-    achievements: [
-      "Padma Bhushan",
-      "Stockholm Water Prize",
-      "Built over 1.5 million household toilets",
-      "Rehabilitated thousands of manual scavengers"
+      "Four-time Chief Minister of Nagaland",
+      "Former Member of Parliament (Lok Sabha)",
+      "Key role in Naga peace talks",
+      "Infrastructure development in the state"
     ],
     votes: 4987,
+    socialMedia: {
+      twitter: "Neiphiu_Rio"
+    }
+  },
+  
+  // Mizoram
+  {
+    id: 28,
+    name: "Lalremsiami",
+    category: "Sports",
+    state: "Mizoram",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Field hockey player who was part of the Indian women's team that finished fourth at the Tokyo Olympics.",
+    achievements: [
+      "First female Olympian from Mizoram",
+      "Asian Games silver medalist",
+      "FIH Rising Star of the Year 2019",
+      "Arjuna Award recipient"
+    ],
+    votes: 5324,
+    socialMedia: {
+      instagram: "lalremsiami_"
+    }
+  },
+  
+  // Sikkim
+  {
+    id: 29,
+    name: "Pawan Chamling",
+    category: "Politics",
+    state: "Sikkim",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Longest serving Chief Minister in India who transformed Sikkim into an organic farming state.",
+    achievements: [
+      "Five consecutive terms as Chief Minister",
+      "Converted Sikkim into first fully organic state",
+      "Sustainable Development Leadership Award",
+      "Significantly improved state's HDI ranking"
+    ],
+    votes: 4876,
     socialMedia: {}
   },
   
-  // Additional Celebrities from various categories
+  // Jammu & Kashmir
   {
-    id: 41,
-    name: "Sania Mirza",
-    category: "Sports",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Former professional tennis player and first Indian woman to win a WTA title.",
+    id: 30,
+    name: "Omar Abdullah",
+    category: "Politics",
+    state: "Jammu & Kashmir",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Former Chief Minister of Jammu and Kashmir and a prominent political leader from the region.",
     achievements: [
-      "Six Grand Slam titles",
-      "Padma Bhushan",
-      "Rajiv Gandhi Khel Ratna Award",
-      "UN Women Goodwill Ambassador for South Asia"
+      "Chief Minister of Jammu and Kashmir (2009-2015)",
+      "Former Union Minister of State",
+      "Member of Parliament for multiple terms",
+      "Vice President of National Conference party"
+    ],
+    votes: 5123,
+    socialMedia: {
+      twitter: "OmarAbdullah"
+    }
+  },
+  
+  // Puducherry
+  {
+    id: 31,
+    name: "M. Night Shyamalan",
+    category: "Film",
+    state: "Puducherry",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Academy Award-nominated filmmaker known for his twist endings and supernatural plots.",
+    achievements: [
+      "Academy Award nomination for 'The Sixth Sense'",
+      "Multiple successful Hollywood films",
+      "Youngest filmmaker nominated for Best Director",
+      "Distinctive storytelling style"
     ],
     votes: 6234,
     socialMedia: {
-      twitter: "MirzaSania",
-      instagram: "mirzasaniar"
+      twitter: "MNightShyamalan"
     }
   },
+  
+  // Chandigarh
   {
-    id: 42,
-    name: "Sundar Pichai",
-    category: "Business",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "CEO of Google and Alphabet Inc., leading one of the world's most valuable technology companies.",
-    achievements: [
-      "Led development of Google Chrome",
-      "Oversaw Android operating system development",
-      "Named among TIME's 100 most influential people",
-      "Forbes' Power List recognition"
-    ],
-    votes: 7123,
-    socialMedia: {
-      twitter: "sundarpichai"
-    }
-  },
-  {
-    id: 43,
-    name: "Sudha Murty",
-    category: "Literature",
+    id: 32,
+    name: "Kirron Kher",
+    category: "Film",
+    state: "Chandigarh",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Author, philanthropist, and chairperson of the Infosys Foundation known for her simple storytelling style.",
+    description: "Actress and politician who has represented Chandigarh in the Lok Sabha.",
     achievements: [
-      "Padma Shri",
-      "R.K. Narayan Award for Literature",
-      "Published over 30 books",
-      "Pioneer in computer science education in India"
+      "National Film Award for Best Actress",
+      "Member of Parliament from Chandigarh",
+      "Notable roles in critically acclaimed films",
+      "Television show judge and host"
+    ],
+    votes: 5678,
+    socialMedia: {
+      twitter: "KirronKherBJP"
+    }
+  },
+  
+  // Ladakh
+  {
+    id: 33,
+    name: "Sonam Wangchuk",
+    category: "Science",
+    state: "Ladakh",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Engineer, innovator and education reformist who inspired the character of Phunsukh Wangdu in '3 Idiots'.",
+    achievements: [
+      "Ramon Magsaysay Award",
+      "Invention of the Ice Stupa artificial glacier",
+      "Founder of Students' Educational and Cultural Movement of Ladakh",
+      "Rolex Award for Enterprise"
     ],
     votes: 6543,
-    socialMedia: {}
+    socialMedia: {
+      twitter: "Wangchuk66"
+    }
   },
+  
+  // Dadra and Nagar Haveli and Daman and Diu
   {
-    id: 44,
-    name: "Satyajit Ray",
-    category: "Film",
+    id: 34,
+    name: "Mohan Delkar",
+    category: "Politics",
+    state: "Dadra and Nagar Haveli",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Legendary filmmaker, screenwriter, and author, considered one of the greatest filmmakers of all time.",
+    description: "Seven-time Member of Parliament who represented Dadra and Nagar Haveli in the Lok Sabha.",
     achievements: [
-      "Academy Honorary Award",
-      "Bharat Ratna (posthumous)",
-      "35 National Film Awards",
-      "Legion of Honor from France"
+      "Seven-time Member of Parliament",
+      "Tribal rights advocate",
+      "Regional development initiatives",
+      "Educational institution founder"
     ],
-    votes: 7234,
+    votes: 4567,
     socialMedia: {}
   },
+  
+  // Andaman and Nicobar Islands
   {
-    id: 45,
+    id: 35,
+    name: "Satyendra Prasanna Sinha",
+    category: "Politics",
+    state: "Andaman and Nicobar Islands",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "First Indian to be appointed as a member of the Viceroy's Executive Council during British rule.",
+    achievements: [
+      "First Indian member of Viceroy's Executive Council",
+      "Peerage as Baron Sinha of Raipur",
+      "First Indian to become a member of British House of Lords",
+      "Significant contributor to Indian autonomy movement"
+    ],
+    votes: 4321,
+    socialMedia: {}
+  },
+  
+  // Lakshadweep
+  {
+    id: 36,
+    name: "Mohammed Koya Thangal",
+    category: "Politics",
+    state: "Lakshadweep",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Former Member of Parliament from Lakshadweep who worked for the development of the islands.",
+    achievements: [
+      "Multiple terms as Member of Parliament",
+      "Notable contributions to Lakshadweep's development",
+      "Advocate for island communities",
+      "Environmental conservation efforts"
+    ],
+    votes: 4123,
+    socialMedia: {}
+  },
+  
+  // More from larger states
+  
+  // Maharashtra (Additional)
+  {
+    id: 37,
+    name: "Sachin Tendulkar",
+    category: "Sports",
+    state: "Maharashtra",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Legendary cricketer known as the 'God of Cricket' and the highest run-scorer in international cricket history.",
+    achievements: [
+      "First player to score 100 international centuries",
+      "Bharat Ratna (2014)",
+      "Rajiv Gandhi Khel Ratna Award",
+      "First sportsperson to receive Bharat Ratna"
+    ],
+    votes: 9875,
+    socialMedia: {
+      twitter: "sachin_rt"
+    }
+  },
+  
+  // Karnataka (Additional)
+  {
+    id: 38,
     name: "Dr. Devi Shetty",
     category: "Science",
+    state: "Karnataka",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Cardiac surgeon and entrepreneur who revolutionized healthcare delivery in India by making it affordable.",
     achievements: [
@@ -765,86 +748,235 @@ export const celebrities: Celebrity[] = [
     votes: 5678,
     socialMedia: {}
   },
+  
+  // Tamil Nadu (Additional)
   {
-    id: 46,
-    name: "Sushma Swaraj",
-    category: "Politics",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Former Minister of External Affairs known for her accessible diplomacy and humanitarian approach.",
+    id: 39,
+    name: "Rajinikanth",
+    category: "Film",
+    state: "Tamil Nadu",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Iconic actor known as 'Superstar' with a cult following in Indian cinema, especially in the South.",
     achievements: [
-      "Youngest cabinet minister in Haryana",
-      "First woman Chief Minister of Delhi",
-      "Helped thousands of Indians stranded abroad",
-      "Outstanding Parliamentarian Award"
+      "Padma Vibhushan",
+      "Dadasaheb Phalke Award",
+      "Centenary Award for Indian Film Personality of the Year at IFFI",
+      "Multiple state film awards"
     ],
-    votes: 6543,
+    votes: 8765,
     socialMedia: {
-      twitter: "SushmaSwaraj"
+      twitter: "rajinikanth"
     }
   },
+  
+  // Uttar Pradesh (Additional)
   {
-    id: 47,
-    name: "Zubin Mehta",
-    category: "Music",
+    id: 40,
+    name: "Amitabh Srivastava",
+    category: "Science",
+    state: "Uttar Pradesh",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Renowned conductor who has led some of the world's greatest orchestras for over five decades.",
+    description: "Tech innovator who co-founded Azure, Microsoft's cloud computing platform and infrastructure.",
     achievements: [
-      "Padma Vibhushan",
-      "Kennedy Center Honors",
-      "Star of the Order of the Italian Solidarity",
-      "Wolf Prize in Arts"
+      "Co-founder of Microsoft Azure",
+      "Key contributor to Windows NT operating system",
+      "Distinguished Engineer at Microsoft",
+      "Multiple patents in cloud computing technology"
     ],
-    votes: 5432,
+    votes: 5234,
     socialMedia: {}
   },
+  
+  // West Bengal (Additional)
   {
-    id: 48,
-    name: "Azim Premji",
-    category: "Business",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Businessman, investor, and philanthropist who transformed Wipro into a global IT company and pioneered philanthropy in India.",
+    id: 41,
+    name: "Amartya Sen",
+    category: "Science",
+    state: "West Bengal",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Nobel Prize-winning economist known for his work on welfare economics, social choice theory, and economic justice.",
     achievements: [
-      "Padma Bhushan",
-      "Padma Vibhushan",
-      "First Indian to sign The Giving Pledge",
-      "Donated over $21 billion to charitable causes"
+      "Nobel Memorial Prize in Economic Sciences (1998)",
+      "Bharat Ratna",
+      "Over 20 honorary doctorates",
+      "Master of Trinity College, Cambridge"
     ],
     votes: 6789,
     socialMedia: {}
   },
+  
+  // Gujarat (Additional)
   {
-    id: 49,
-    name: "Kiran Bedi",
-    category: "Social",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "First woman to join the Indian Police Service and renowned social activist working for prison reform.",
+    id: 42,
+    name: "Dhirubhai Ambani",
+    category: "Business",
+    state: "Gujarat",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Founder of Reliance Industries who revolutionized equity investing in India.",
     achievements: [
-      "Ramon Magsaysay Award",
-      "UN Medal",
-      "Revolutionized Tihar Jail with reform programs",
-      "President's Gallantry Award"
+      "Built India's largest private sector company",
+      "Padma Vibhushan (posthumous)",
+      "Democratized stock market investment in India",
+      "Named among 'Power 50 - Asia's Most Powerful People'"
     ],
-    votes: 6123,
+    votes: 7654,
+    socialMedia: {}
+  },
+  
+  // Kerala (Additional)
+  {
+    id: 43,
+    name: "KR Narayanan",
+    category: "Politics",
+    state: "Kerala",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "First Dalit President of India and former diplomat who served as the 10th President of India.",
+    achievements: [
+      "First Dalit President of India",
+      "Vice President of India (1992-1997)",
+      "Indian Ambassador to the United States",
+      "Distinguished academic and diplomatic career"
+    ],
+    votes: 5678,
+    socialMedia: {}
+  },
+  
+  // Punjab (Additional)
+  {
+    id: 44,
+    name: "Kalpana Chawla",
+    category: "Science",
+    state: "Punjab",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "The first woman of Indian origin to go to space, remembered for her contributions to space exploration.",
+    achievements: [
+      "NASA Distinguished Service Medal",
+      "Congressional Space Medal of Honor",
+      "NASA Space Flight Medal",
+      "Multiple asteroids and satellites named after her"
+    ],
+    votes: 5839,
+    socialMedia: {}
+  },
+  
+  // Rajasthan (Additional)
+  {
+    id: 45,
+    name: "Laxmi Agarwal",
+    category: "Social",
+    state: "Rajasthan",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Acid attack survivor and campaigner for rights of acid attack victims and women in general.",
+    achievements: [
+      "International Women of Courage Award",
+      "Subject of the film 'Chhapaak'",
+      "Stop Sale Acid campaign founder",
+      "TED speaker and activist"
+    ],
+    votes: 5432,
     socialMedia: {
-      twitter: "thekiranbedi"
+      twitter: "thelaxmiagarwal",
+      instagram: "thelaxmiagarwal"
     }
   },
+  
+  // Madhya Pradesh (Additional)
+  {
+    id: 46,
+    name: "Jyotiraditya Scindia",
+    category: "Politics",
+    state: "Madhya Pradesh",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Union Minister and former Member of Parliament from Madhya Pradesh known for his administrative skills.",
+    achievements: [
+      "Union Cabinet Minister",
+      "Four-time Member of Parliament",
+      "Harvard and Stanford educated",
+      "Former president of Madhya Pradesh Cricket Association"
+    ],
+    votes: 5234,
+    socialMedia: {
+      twitter: "JM_Scindia"
+    }
+  },
+  
+  // Bihar (Additional)
+  {
+    id: 47,
+    name: "Shatrughan Sinha",
+    category: "Film",
+    state: "Bihar",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Actor-turned-politician known for his distinctive voice and dialogue delivery in Hindi cinema.",
+    achievements: [
+      "Multiple film awards for acting",
+      "Member of Parliament for multiple terms",
+      "Union Cabinet Minister",
+      "FTII Chairman"
+    ],
+    votes: 5678,
+    socialMedia: {
+      twitter: "ShatruganSinha"
+    }
+  },
+  
+  // Odisha (Additional)
+  {
+    id: 48,
+    name: "Sudarsan Pattnaik",
+    category: "Social",
+    state: "Odisha",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Internationally acclaimed sand artist known for his environmental and social awareness messages.",
+    achievements: [
+      "Padma Shri recipient",
+      "Multiple world records",
+      "Gold medals in international sand art championships",
+      "Founder of Sudarsan Sand Art Institute"
+    ],
+    votes: 5123,
+    socialMedia: {
+      twitter: "sudarsansand"
+    }
+  },
+  
+  // Andhra Pradesh (Additional)
+  {
+    id: 49,
+    name: "Satya Nadella",
+    category: "Business",
+    state: "Andhra Pradesh",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "CEO of Microsoft who transformed the company into a cloud-first, mobile-first technology leader.",
+    achievements: [
+      "Led Microsoft's transformation to cloud computing",
+      "Increased Microsoft's market value multiple times",
+      "Author of 'Hit Refresh'",
+      "Named Financial Times Person of the Year"
+    ],
+    votes: 7123,
+    socialMedia: {
+      twitter: "satyanadella"
+    }
+  },
+  
+  // Delhi (Additional)
   {
     id: 50,
-    name: "Mirabai Chanu",
-    category: "Sports",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
-    description: "Olympic silver medalist weightlifter who has broken multiple Commonwealth and national records.",
+    name: "Kailash Satyarthi",
+    category: "Social",
+    state: "Delhi",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    description: "Children's rights activist who has worked against child labor and for the right to education for all children.",
     achievements: [
-      "Olympic Silver Medal (2020 Tokyo)",
-      "World Championship Gold Medal",
-      "Commonwealth Games Gold Medal",
-      "Rajiv Gandhi Khel Ratna Award"
+      "Nobel Peace Prize (2014)",
+      "Rescued over 90,000 children from slavery",
+      "Founded Bachpan Bachao Andolan",
+      "Congressional briefing in the United States"
     ],
-    votes: 7321,
+    votes: 5678,
     socialMedia: {
-      twitter: "mirabai_chanu",
-      instagram: "mirabai_chanu"
+      twitter: "k_satyarthi"
     }
   }
 ];
@@ -861,3 +993,12 @@ export const getCelebritiesByCategory = (category: string): Celebrity[] => {
   }
   return celebrities.filter(celeb => celeb.category === category);
 };
+
+// Get celebrities by state
+export const getCelebritiesByState = (state: string): Celebrity[] => {
+  if (state === "All") {
+    return celebrities;
+  }
+  return celebrities.filter(celeb => celeb.state === state);
+};
+

@@ -3,6 +3,7 @@ export interface Celebrity {
   id: number;
   name: string;
   category: CelebrityCategory;
+  state: string; // Added state property
   image: string;
   description: string;
   achievements: string[];
