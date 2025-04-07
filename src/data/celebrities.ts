@@ -9,7 +9,7 @@ export const celebrities: Celebrity[] = [
     name: "Amitabh Bachchan",
     category: "Film",
     state: "Maharashtra",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "One of India's most influential actors with a career spanning over five decades in Hindi cinema.",
     achievements: [
       "Padma Vibhushan (2015)",
@@ -30,7 +30,7 @@ export const celebrities: Celebrity[] = [
     name: "Shah Rukh Khan",
     category: "Film",
     state: "Delhi",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Known as the 'King of Bollywood', Shah Rukh Khan has appeared in more than 80 Hindi films and earned numerous accolades.",
     achievements: [
       "14 Filmfare Awards",
@@ -51,7 +51,7 @@ export const celebrities: Celebrity[] = [
     name: "Kiran Mazumdar-Shaw",
     category: "Business",
     state: "Karnataka",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Founder and Executive Chairperson of Biocon Limited, pioneering biotechnology innovation in India.",
     achievements: [
       "Padma Shri and Padma Bhushan recipient",
@@ -71,7 +71,7 @@ export const celebrities: Celebrity[] = [
     name: "A.R. Rahman",
     category: "Music",
     state: "Tamil Nadu",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Renowned composer, singer and music producer known as the 'Mozart of Madras'.",
     achievements: [
       "2 Academy Awards",
@@ -92,7 +92,7 @@ export const celebrities: Celebrity[] = [
     name: "Narendra Modi",
     category: "Politics",
     state: "Gujarat",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "14th and current Prime Minister of India, known for his economic reforms and foreign policy initiatives.",
     achievements: [
       "Longest-serving Non-Congress Prime Minister",
@@ -113,7 +113,7 @@ export const celebrities: Celebrity[] = [
     name: "Neeraj Chopra",
     category: "Sports",
     state: "Haryana",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1508341591423-4347099e1f19?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Javelin thrower who won India's first Olympic gold medal in athletics, ending a 100-year wait for a track and field medal.",
     achievements: [
       "Olympic Gold Medalist (2020 Tokyo)",
@@ -134,7 +134,7 @@ export const celebrities: Celebrity[] = [
     name: "Mamata Banerjee",
     category: "Politics",
     state: "West Bengal",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1587614387466-0a72ca909e16?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "First woman Chief Minister of West Bengal and founder of the All India Trinamool Congress.",
     achievements: [
       "Multiple terms as Chief Minister",
@@ -154,7 +154,7 @@ export const celebrities: Celebrity[] = [
     name: "Milkha Singh",
     category: "Sports",
     state: "Punjab",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "The 'Flying Sikh', who was the first Indian male athlete to reach an Olympic final.",
     achievements: [
       "Gold medals at Commonwealth Games",
@@ -172,7 +172,7 @@ export const celebrities: Celebrity[] = [
     name: "Akhilesh Yadav",
     category: "Politics",
     state: "Uttar Pradesh",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Former Chief Minister of Uttar Pradesh and President of the Samajwadi Party.",
     achievements: [
       "Youngest Chief Minister of UP",
@@ -192,7 +192,7 @@ export const celebrities: Celebrity[] = [
     name: "P.V. Sindhu",
     category: "Sports",
     state: "Andhra Pradesh",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "First Indian to become Badminton World Champion and only Indian woman to win two Olympic medals.",
     achievements: [
       "Olympic Silver Medalist (2016)",
@@ -213,7 +213,7 @@ export const celebrities: Celebrity[] = [
     name: "Mohanlal",
     category: "Film",
     state: "Kerala",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "One of the most celebrated actors in Malayalam cinema with a career spanning over four decades.",
     achievements: [
       "5 National Film Awards",
@@ -234,7 +234,7 @@ export const celebrities: Celebrity[] = [
     name: "Diya Kumari",
     category: "Politics",
     state: "Rajasthan",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Member of the royal family of Jaipur and a prominent politician serving as Member of Parliament.",
     achievements: [
       "Member of Parliament from Rajsamand",
@@ -254,7 +254,7 @@ export const celebrities: Celebrity[] = [
     name: "Dutee Chand",
     category: "Sports",
     state: "Odisha",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "India's first openly gay athlete and national record holder in women's 100m sprint.",
     achievements: [
       "Two silver medals at Asian Games",
@@ -275,7 +275,7 @@ export const celebrities: Celebrity[] = [
     name: "Sushil Kumar Modi",
     category: "Politics",
     state: "Bihar",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Former Deputy Chief Minister of Bihar and a senior BJP leader.",
     achievements: [
       "Member of Rajya Sabha",
@@ -295,7 +295,7 @@ export const celebrities: Celebrity[] = [
     name: "MS Dhoni",
     category: "Sports",
     state: "Jharkhand",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Former captain of the Indian cricket team who led India to win the ICC World Cup, ICC Champions Trophy, and ICC World Twenty20.",
     achievements: [
       "Captain of ICC World Cup winning team (2011)",
@@ -315,7 +315,7 @@ export const celebrities: Celebrity[] = [
     name: "Bhupen Hazarika",
     category: "Music",
     state: "Assam",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Legendary singer, musician, and filmmaker known as the 'Bard of the Brahmaputra'.",
     achievements: [
       "Bharat Ratna (posthumous)",
@@ -333,7 +333,7 @@ export const celebrities: Celebrity[] = [
     name: "Shankar Mahadevan",
     category: "Music",
     state: "Madhya Pradesh",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1598411072086-e2962a4306fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Award-winning composer and playback singer who is part of the Shankar–Ehsaan–Loy composing trio.",
     achievements: [
       "National Film Award for Best Male Playback Singer",
@@ -354,7 +354,7 @@ export const celebrities: Celebrity[] = [
     name: "Anuj Sharma",
     category: "Film",
     state: "Chhattisgarh",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Prominent actor and politician from Chhattisgarh who has contributed significantly to regional cinema.",
     achievements: [
       "Several hit films in Chhattisgarhi cinema",
@@ -372,7 +372,7 @@ export const celebrities: Celebrity[] = [
     name: "Ruskin Bond",
     category: "Literature",
     state: "Uttarakhand",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Beloved author of British descent who writes about life in the Himalayan foothills and has enchanted generations of readers.",
     achievements: [
       "Padma Shri (1999)",
@@ -390,7 +390,7 @@ export const celebrities: Celebrity[] = [
     name: "P.V. Narasimha Rao",
     category: "Politics",
     state: "Telangana",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Former Prime Minister of India who implemented significant economic reforms that liberalized the Indian economy.",
     achievements: [
       "9th Prime Minister of India",
@@ -408,7 +408,7 @@ export const celebrities: Celebrity[] = [
     name: "Preity Zinta",
     category: "Film",
     state: "Himachal Pradesh",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Actress and entrepreneur known for her roles in Hindi films and as co-owner of Punjab Kings IPL team.",
     achievements: [
       "Filmfare Award for Best Female Debut",
@@ -429,7 +429,7 @@ export const celebrities: Celebrity[] = [
     name: "Manohar Parrikar",
     category: "Politics",
     state: "Goa",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Former Chief Minister of Goa and Defence Minister of India known for his simple lifestyle and administrative skills.",
     achievements: [
       "IIT Mumbai graduate in metallurgical engineering",
@@ -447,7 +447,7 @@ export const celebrities: Celebrity[] = [
     name: "Mary Kom",
     category: "Sports",
     state: "Manipur",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1605993439219-9d09d2020fa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Six-time World Amateur Boxing champion and the only woman boxer to win medals in seven world championships.",
     achievements: [
       "Olympic Bronze Medalist (2012)",
@@ -467,7 +467,7 @@ export const celebrities: Celebrity[] = [
     name: "Sourabhee Debbarma",
     category: "Music",
     state: "Tripura",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "First female winner of Indian Idol and one of the most prominent musicians from Northeast India.",
     achievements: [
       "Winner of Indian Idol 4",
@@ -487,7 +487,7 @@ export const celebrities: Celebrity[] = [
     name: "Talom Rukbo",
     category: "Social",
     state: "Arunachal Pradesh",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Father of the Donyi-Polo movement who worked for the preservation of indigenous cultural identity in Arunachal Pradesh.",
     achievements: [
       "Founded the Donyi-Polo cultural movement",
@@ -505,7 +505,7 @@ export const celebrities: Celebrity[] = [
     name: "PA Sangma",
     category: "Politics",
     state: "Meghalaya",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Former Speaker of the Lok Sabha and Chief Minister of Meghalaya who was a prominent leader from Northeast India.",
     achievements: [
       "Speaker of the Lok Sabha (1996-1998)",
@@ -523,7 +523,7 @@ export const celebrities: Celebrity[] = [
     name: "Neiphiu Rio",
     category: "Politics",
     state: "Nagaland",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Chief Minister of Nagaland who has played a significant role in the state's development.",
     achievements: [
       "Four-time Chief Minister of Nagaland",
@@ -543,7 +543,7 @@ export const celebrities: Celebrity[] = [
     name: "Lalremsiami",
     category: "Sports",
     state: "Mizoram",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Field hockey player who was part of the Indian women's team that finished fourth at the Tokyo Olympics.",
     achievements: [
       "First female Olympian from Mizoram",
@@ -563,7 +563,7 @@ export const celebrities: Celebrity[] = [
     name: "Pawan Chamling",
     category: "Politics",
     state: "Sikkim",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Longest serving Chief Minister in India who transformed Sikkim into an organic farming state.",
     achievements: [
       "Five consecutive terms as Chief Minister",
@@ -581,7 +581,7 @@ export const celebrities: Celebrity[] = [
     name: "Omar Abdullah",
     category: "Politics",
     state: "Jammu & Kashmir",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Former Chief Minister of Jammu and Kashmir and a prominent political leader from the region.",
     achievements: [
       "Chief Minister of Jammu and Kashmir (2009-2015)",
@@ -601,7 +601,7 @@ export const celebrities: Celebrity[] = [
     name: "M. Night Shyamalan",
     category: "Film",
     state: "Puducherry",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Academy Award-nominated filmmaker known for his twist endings and supernatural plots.",
     achievements: [
       "Academy Award nomination for 'The Sixth Sense'",
@@ -621,7 +621,7 @@ export const celebrities: Celebrity[] = [
     name: "Kirron Kher",
     category: "Film",
     state: "Chandigarh",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Actress and politician who has represented Chandigarh in the Lok Sabha.",
     achievements: [
       "National Film Award for Best Actress",
@@ -641,7 +641,7 @@ export const celebrities: Celebrity[] = [
     name: "Sonam Wangchuk",
     category: "Science",
     state: "Ladakh",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1623366302587-b38b1ddaefd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Engineer, innovator and education reformist who inspired the character of Phunsukh Wangdu in '3 Idiots'.",
     achievements: [
       "Ramon Magsaysay Award",
@@ -661,7 +661,7 @@ export const celebrities: Celebrity[] = [
     name: "Mohan Delkar",
     category: "Politics",
     state: "Dadra and Nagar Haveli",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1615813967515-e1838c1c5116?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Seven-time Member of Parliament who represented Dadra and Nagar Haveli in the Lok Sabha.",
     achievements: [
       "Seven-time Member of Parliament",
@@ -679,7 +679,7 @@ export const celebrities: Celebrity[] = [
     name: "Satyendra Prasanna Sinha",
     category: "Politics",
     state: "Andaman and Nicobar Islands",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1590086782957-93c06ef21604?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "First Indian to be appointed as a member of the Viceroy's Executive Council during British rule.",
     achievements: [
       "First Indian member of Viceroy's Executive Council",
@@ -697,7 +697,7 @@ export const celebrities: Celebrity[] = [
     name: "Mohammed Koya Thangal",
     category: "Politics",
     state: "Lakshadweep",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Former Member of Parliament from Lakshadweep who worked for the development of the islands.",
     achievements: [
       "Multiple terms as Member of Parliament",
@@ -717,7 +717,7 @@ export const celebrities: Celebrity[] = [
     name: "Sachin Tendulkar",
     category: "Sports",
     state: "Maharashtra",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Legendary cricketer known as the 'God of Cricket' and the highest run-scorer in international cricket history.",
     achievements: [
       "First player to score 100 international centuries",
@@ -737,7 +737,7 @@ export const celebrities: Celebrity[] = [
     name: "Dr. Devi Shetty",
     category: "Science",
     state: "Karnataka",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Cardiac surgeon and entrepreneur who revolutionized healthcare delivery in India by making it affordable.",
     achievements: [
       "Padma Bhushan",
@@ -755,7 +755,7 @@ export const celebrities: Celebrity[] = [
     name: "Rajinikanth",
     category: "Film",
     state: "Tamil Nadu",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1584999734482-0361aecad844?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Iconic actor known as 'Superstar' with a cult following in Indian cinema, especially in the South.",
     achievements: [
       "Padma Vibhushan",
@@ -775,7 +775,7 @@ export const celebrities: Celebrity[] = [
     name: "Amitabh Srivastava",
     category: "Science",
     state: "Uttar Pradesh",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Tech innovator who co-founded Azure, Microsoft's cloud computing platform and infrastructure.",
     achievements: [
       "Co-founder of Microsoft Azure",
@@ -793,7 +793,7 @@ export const celebrities: Celebrity[] = [
     name: "Amartya Sen",
     category: "Science",
     state: "West Bengal",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Nobel Prize-winning economist known for his work on welfare economics, social choice theory, and economic justice.",
     achievements: [
       "Nobel Memorial Prize in Economic Sciences (1998)",
@@ -811,7 +811,7 @@ export const celebrities: Celebrity[] = [
     name: "Dhirubhai Ambani",
     category: "Business",
     state: "Gujarat",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Founder of Reliance Industries who revolutionized equity investing in India.",
     achievements: [
       "Built India's largest private sector company",
@@ -829,7 +829,7 @@ export const celebrities: Celebrity[] = [
     name: "KR Narayanan",
     category: "Politics",
     state: "Kerala",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "First Dalit President of India and former diplomat who served as the 10th President of India.",
     achievements: [
       "First Dalit President of India",
@@ -847,7 +847,7 @@ export const celebrities: Celebrity[] = [
     name: "Kalpana Chawla",
     category: "Science",
     state: "Punjab",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1558898479-33c0057a5d12?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "The first woman of Indian origin to go to space, remembered for her contributions to space exploration.",
     achievements: [
       "NASA Distinguished Service Medal",
@@ -865,7 +865,7 @@ export const celebrities: Celebrity[] = [
     name: "Laxmi Agarwal",
     category: "Social",
     state: "Rajasthan",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1557296387-5358ad7997bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Acid attack survivor and campaigner for rights of acid attack victims and women in general.",
     achievements: [
       "International Women of Courage Award",
@@ -886,7 +886,7 @@ export const celebrities: Celebrity[] = [
     name: "Jyotiraditya Scindia",
     category: "Politics",
     state: "Madhya Pradesh",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Union Minister and former Member of Parliament from Madhya Pradesh known for his administrative skills.",
     achievements: [
       "Union Cabinet Minister",
@@ -906,7 +906,7 @@ export const celebrities: Celebrity[] = [
     name: "Shatrughan Sinha",
     category: "Film",
     state: "Bihar",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Actor-turned-politician known for his distinctive voice and dialogue delivery in Hindi cinema.",
     achievements: [
       "Multiple film awards for acting",
@@ -926,7 +926,7 @@ export const celebrities: Celebrity[] = [
     name: "Sudarsan Pattnaik",
     category: "Social",
     state: "Odisha",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Internationally acclaimed sand artist known for his environmental and social awareness messages.",
     achievements: [
       "Padma Shri recipient",
@@ -946,7 +946,7 @@ export const celebrities: Celebrity[] = [
     name: "Satya Nadella",
     category: "Business",
     state: "Andhra Pradesh",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "CEO of Microsoft who transformed the company into a cloud-first, mobile-first technology leader.",
     achievements: [
       "Led Microsoft's transformation to cloud computing",
@@ -966,7 +966,7 @@ export const celebrities: Celebrity[] = [
     name: "Kailash Satyarthi",
     category: "Social",
     state: "Delhi",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     description: "Children's rights activist who has worked against child labor and for the right to education for all children.",
     achievements: [
       "Nobel Peace Prize (2014)",
