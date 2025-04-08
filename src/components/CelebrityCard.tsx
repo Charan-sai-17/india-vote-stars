@@ -9,7 +9,8 @@ import {
   Twitter, 
   Instagram, 
   Facebook, 
-  Linkedin 
+  Linkedin,
+  MapPin
 } from "lucide-react";
 
 interface CelebrityCardProps {
@@ -47,6 +48,10 @@ const CelebrityCard = ({ celebrity, onVoteClick }: CelebrityCardProps) => {
             <Trophy size={16} className="text-india-gold" />
             <span className="font-semibold text-india-saffron">{celebrity.votes.toLocaleString()}</span>
           </div>
+        </div>
+        <div className="flex items-center text-sm text-gray-500 mt-1">
+          <MapPin size={14} className="mr-1" />
+          <span>{celebrity.state}</span>
         </div>
       </CardHeader>
       
