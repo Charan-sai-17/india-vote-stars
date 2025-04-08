@@ -1,14 +1,15 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Search } from "lucide-react";
+import { Search, Phone } from "lucide-react";
 import { Input } from "@/components/ui/input";
-import { Celebrity } from "@/types";
+import { Celebrity, VoterRecord } from "@/types";
 import { celebrities, getCelebritiesByCategory } from "@/data/celebrities";
 import Hero from "@/components/Hero";
 import CelebrityCard from "@/components/CelebrityCard";
 import CategoryFilter from "@/components/CategoryFilter";
 import VotingModal from "@/components/VotingModal";
+import VoteHistoryModal from "@/components/VoteHistoryModal";
 import Leaderboard from "@/components/Leaderboard";
 
 const Index = () => {
@@ -17,7 +18,12 @@ const Index = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [selectedCelebrity, setSelectedCelebrity] = useState<Celebrity | null>(null);
   const [isVotingModalOpen, setIsVotingModalOpen] = useState<boolean>(false);
+  const [isHistoryModalOpen, setIsHistoryModalOpen] = useState<boolean>(false);
   const [allCelebrities, setAllCelebrities] = useState<Celebrity[]>(celebrities);
+  const [currentMobileNumber, setCurrentMobileNumber] = useState<string>("");
+  
+  // Store voter records: mobile number -> current vote and vote history
+  const [voterRecords, setVoterRecords] = useState<Record<string, VoterRecord>>({});
   
   useEffect(() => {
     filterCelebrities();
@@ -60,18 +66,79 @@ const Index = () => {
     setIsVotingModalOpen(true);
   };
   
-  const handleVoteSubmit = (updatedCelebrity: Celebrity) => {
-    // Update the celebrity votes in state
-    const updatedCelebrities = allCelebrities.map((celeb) =>
-      celeb.id === updatedCelebrity.id ? updatedCelebrity : celeb
-    );
+  const handleVoteSubmit = (updatedCelebrity: Celebrity, mobileNumber: string, previousVote: Celebrity | null) => {
+    setCurrentMobileNumber(mobileNumber);
+    
+    let updatedCelebrities = [...allCelebrities];
+    
+    // If this mobile number already voted for a different celebrity
+    if (previousVote && previousVote.id !== updatedCelebrity.id) {
+      // Decrease vote for previous celebrity
+      updatedCelebrities = updatedCelebrities.map((celeb) => {
+        if (celeb.id === previousVote.id) {
+          return { ...celeb, votes: celeb.votes - 1 };
+        }
+        return celeb;
+      });
+    }
+    
+    // Only increase vote if this is a new vote or transferring from another celebrity
+    if (!previousVote || previousVote.id !== updatedCelebrity.id) {
+      // Update the celebrity votes in state
+      updatedCelebrities = updatedCelebrities.map((celeb) =>
+        celeb.id === updatedCelebrity.id ? { ...celeb, votes: celeb.votes + 1 } : celeb
+      );
+    }
     
     setAllCelebrities(updatedCelebrities);
     setFilteredCelebrities(
-      filteredCelebrities.map((celeb) =>
-        celeb.id === updatedCelebrity.id ? updatedCelebrity : celeb
-      )
+      filteredCelebrities.map((celeb) => {
+        if (celeb.id === updatedCelebrity.id && (!previousVote || previousVote.id !== updatedCelebrity.id)) {
+          return { ...celeb, votes: celeb.votes + 1 };
+        }
+        if (previousVote && celeb.id === previousVote.id) {
+          return { ...celeb, votes: celeb.votes - 1 };
+        }
+        return celeb;
+      })
     );
+    
+    // Update voter records
+    const updatedVoterRecords = { ...voterRecords };
+    
+    if (!updatedVoterRecords[mobileNumber]) {
+      // First vote for this number
+      updatedVoterRecords[mobileNumber] = {
+        currentVote: updatedCelebrity.id,
+        history: [{ 
+          celebrityId: updatedCelebrity.id, 
+          timestamp: new Date() 
+        }]
+      };
+    } else {
+      // Update existing record
+      // Only add to history if different from current
+      if (updatedVoterRecords[mobileNumber].currentVote !== updatedCelebrity.id) {
+        updatedVoterRecords[mobileNumber] = {
+          currentVote: updatedCelebrity.id,
+          history: [
+            ...updatedVoterRecords[mobileNumber].history,
+            { 
+              celebrityId: updatedCelebrity.id, 
+              timestamp: new Date() 
+            }
+          ]
+        };
+      }
+    }
+    
+    setVoterRecords(updatedVoterRecords);
+  };
+  
+  const hasUserVotedFor = (celebrity: Celebrity) => {
+    // Check if current mobile number has voted for this celebrity
+    return currentMobileNumber && 
+           voterRecords[currentMobileNumber]?.currentVote === celebrity.id;
   };
   
   return (
@@ -83,14 +150,23 @@ const Index = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Search and Filter */}
         <div className="max-w-4xl mx-auto mb-8">
-          <div className="relative mb-6">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-            <Input
-              placeholder="Search celebrities by name or category..."
-              className="pl-10 py-6 bg-white"
-              value={searchQuery}
-              onChange={handleSearchChange}
-            />
+          <div className="flex flex-col md:flex-row gap-4 mb-6">
+            <div className="relative flex-grow">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <Input
+                placeholder="Search celebrities by name or category..."
+                className="pl-10 py-6 bg-white"
+                value={searchQuery}
+                onChange={handleSearchChange}
+              />
+            </div>
+            <Button 
+              onClick={() => setIsHistoryModalOpen(true)}
+              className="flex gap-2 items-center bg-india-blue hover:bg-india-blue/80"
+            >
+              <Phone size={18} />
+              <span>Check Your Vote</span>
+            </Button>
           </div>
           
           <CategoryFilter
@@ -124,7 +200,8 @@ const Index = () => {
                 <CelebrityCard 
                   key={celebrity.id} 
                   celebrity={celebrity} 
-                  onVoteClick={handleVoteClick} 
+                  onVoteClick={handleVoteClick}
+                  hasUserVoted={hasUserVotedFor(celebrity)}
                 />
               ))}
             </div>
@@ -141,6 +218,14 @@ const Index = () => {
               The leaderboard is updated in real-time based on votes from people across India. 
               Your vote makes a difference!
             </p>
+            <Button 
+              onClick={() => setIsHistoryModalOpen(true)}
+              variant="outline"
+              className="mt-2"
+            >
+              <Phone size={16} className="mr-2" />
+              Check Your Vote
+            </Button>
           </div>
         </section>
         
@@ -185,6 +270,16 @@ const Index = () => {
         celebrity={selectedCelebrity}
         onClose={() => setIsVotingModalOpen(false)}
         onVoteSubmit={handleVoteSubmit}
+        voterRecords={voterRecords}
+        celebrities={allCelebrities}
+      />
+
+      {/* Vote History Modal */}
+      <VoteHistoryModal
+        isOpen={isHistoryModalOpen}
+        onClose={() => setIsHistoryModalOpen(false)}
+        celebrities={allCelebrities}
+        voterRecords={voterRecords}
       />
     </div>
   );

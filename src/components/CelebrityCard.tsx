@@ -10,20 +10,22 @@ import {
   Instagram, 
   Facebook, 
   Linkedin,
-  MapPin
+  MapPin,
+  Check
 } from "lucide-react";
 
 interface CelebrityCardProps {
   celebrity: Celebrity;
   onVoteClick: (celebrity: Celebrity) => void;
+  hasUserVoted?: boolean;
 }
 
-const CelebrityCard = ({ celebrity, onVoteClick }: CelebrityCardProps) => {
+const CelebrityCard = ({ celebrity, onVoteClick, hasUserVoted = false }: CelebrityCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
   
   return (
     <Card 
-      className="card-hover overflow-hidden h-full flex flex-col"
+      className={`card-hover overflow-hidden h-full flex flex-col ${hasUserVoted ? 'ring-2 ring-india-green' : ''}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -39,6 +41,14 @@ const CelebrityCard = ({ celebrity, onVoteClick }: CelebrityCardProps) => {
         >
           {celebrity.category}
         </Badge>
+        
+        {hasUserVoted && (
+          <Badge 
+            className="absolute top-3 left-3 bg-india-green text-white flex items-center gap-1"
+          >
+            <Check size={12} /> Your Vote
+          </Badge>
+        )}
       </div>
       
       <CardHeader className="p-4 pb-2">
@@ -98,10 +108,12 @@ const CelebrityCard = ({ celebrity, onVoteClick }: CelebrityCardProps) => {
         </div>
         
         <Button 
-          className="w-full bg-india-green hover:bg-india-green/80 text-white"
+          className={`w-full ${hasUserVoted 
+            ? 'bg-india-green/80 hover:bg-india-green text-white' 
+            : 'bg-india-green hover:bg-india-green/80 text-white'}`}
           onClick={() => onVoteClick(celebrity)}
         >
-          Vote Now
+          {hasUserVoted ? 'Update Vote' : 'Vote Now'}
         </Button>
       </CardFooter>
     </Card>

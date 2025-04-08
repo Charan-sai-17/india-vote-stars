@@ -30,3 +30,11 @@ export interface VoteFormData {
   mobileNumber: string;
   celebrityId: number;
 }
+
+export interface VoterRecord {
+  currentVote: number;
+  history: {
+    celebrityId: number;
+    timestamp: Date;
+  }[];
+}

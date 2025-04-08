@@ -12,17 +12,26 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Celebrity, VoteFormData } from "@/types";
-import { celebrities } from "@/data/celebrities";
+import { ArrowRight, Phone } from "lucide-react";
+import { Celebrity, VoteFormData, VoterRecord } from "@/types";
 
 interface VotingModalProps {
   isOpen: boolean;
   celebrity: Celebrity | null;
   onClose: () => void;
-  onVoteSubmit: (updatedCelebrity: Celebrity) => void;
+  onVoteSubmit: (updatedCelebrity: Celebrity, mobileNumber: string, previousVote: Celebrity | null) => void;
+  voterRecords: Record<string, VoterRecord>;
+  celebrities: Celebrity[];
 }
 
-const VotingModal = ({ isOpen, celebrity, onClose, onVoteSubmit }: VotingModalProps) => {
+const VotingModal = ({ 
+  isOpen, 
+  celebrity, 
+  onClose, 
+  onVoteSubmit, 
+  voterRecords, 
+  celebrities 
+}: VotingModalProps) => {
   const [formData, setFormData] = useState<VoteFormData>({
     mobileNumber: "",
     celebrityId: celebrity?.id || 0,
@@ -51,22 +60,36 @@ const VotingModal = ({ isOpen, celebrity, onClose, onVoteSubmit }: VotingModalPr
 
     setIsSubmitting(true);
     
+    // Check if this mobile number has voted before
+    const voterRecord = voterRecords[formData.mobileNumber];
+    let previousVote: Celebrity | null = null;
+    
+    if (voterRecord && voterRecord.currentVote) {
+      previousVote = celebrities.find(c => c.id === voterRecord.currentVote) || null;
+    }
+    
     // Simulate API call with timeout
     setTimeout(() => {
       if (celebrity) {
-        // Update vote count
-        const updatedCelebrity = {
-          ...celebrity,
-          votes: celebrity.votes + 1
-        };
+        // If previous vote exists and is different from current vote
+        if (previousVote && previousVote.id !== celebrity.id) {
+          toast.info(`Your vote has been transferred from ${previousVote.name} to ${celebrity.name}`, {
+            duration: 5000,
+          });
+        } else if (!previousVote) {
+          // Show success message for first vote
+          toast.success("Thank you for voting!", {
+            description: `Your vote for ${celebrity.name} has been recorded.`,
+            duration: 5000,
+          });
+        } else {
+          // Already voted for this celebrity
+          toast.info(`You have already voted for ${celebrity.name}`, {
+            duration: 5000,
+          });
+        }
         
-        onVoteSubmit(updatedCelebrity);
-        
-        // Show success message
-        toast.success("Thank you for voting!", {
-          description: `Your vote for ${celebrity.name} has been recorded.`,
-          duration: 5000,
-        });
+        onVoteSubmit(celebrity, formData.mobileNumber, previousVote);
         
         setIsSubmitting(false);
         onClose();
@@ -107,18 +130,64 @@ const VotingModal = ({ isOpen, celebrity, onClose, onVoteSubmit }: VotingModalPr
         <div className="space-y-4">
           <div className="space-y-2">
             <Label htmlFor="mobileNumber">Your Mobile Number</Label>
-            <Input
-              id="mobileNumber"
-              name="mobileNumber"
-              placeholder="Enter 10-digit mobile number"
-              value={formData.mobileNumber}
-              onChange={handleInputChange}
-              maxLength={10}
-            />
+            <div className="relative">
+              <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+              <Input
+                id="mobileNumber"
+                name="mobileNumber"
+                placeholder="Enter 10-digit mobile number"
+                value={formData.mobileNumber}
+                onChange={handleInputChange}
+                maxLength={10}
+                className="pl-10"
+              />
+            </div>
             <p className="text-xs text-muted-foreground">
               We'll send a confirmation message to this number
             </p>
           </div>
+          
+          {/* Show previous vote if exists */}
+          {formData.mobileNumber && validateMobileNumber(formData.mobileNumber) && 
+           voterRecords[formData.mobileNumber] && 
+           voterRecords[formData.mobileNumber].currentVote !== celebrity.id && (
+            <div className="p-3 bg-amber-50 border border-amber-100 rounded-md">
+              <p className="text-xs text-amber-800 mb-2">
+                You previously voted for:
+              </p>
+              {(() => {
+                const previousVoteId = voterRecords[formData.mobileNumber].currentVote;
+                const previousCelebrity = celebrities.find(c => c.id === previousVoteId);
+                
+                if (previousCelebrity) {
+                  return (
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full overflow-hidden">
+                        <img 
+                          src={previousCelebrity.image} 
+                          alt={previousCelebrity.name}
+                          className="w-full h-full object-cover" 
+                        />
+                      </div>
+                      <div className="flex-1">
+                        <p className="text-sm font-medium">{previousCelebrity.name}</p>
+                        <p className="text-xs text-gray-500">{previousCelebrity.category}</p>
+                      </div>
+                      <ArrowRight className="h-4 w-4 text-amber-500" />
+                      <div className="w-10 h-10 rounded-full overflow-hidden">
+                        <img 
+                          src={celebrity.image} 
+                          alt={celebrity.name}
+                          className="w-full h-full object-cover" 
+                        />
+                      </div>
+                    </div>
+                  );
+                }
+                return <p className="text-sm">Loading previous vote information...</p>;
+              })()}
+            </div>
+          )}
         </div>
         
         <DialogFooter>
